@@ -1,0 +1,146 @@
+{% extends 'base.html' %} {% block title %} The Gold Print {% endblock %} {%
+block content %}
+<div class="the_gold_print_section">
+  <h1 class="text_title">
+    És médico, empreendes e buscas formação especializada?
+  </h1>
+  <h4 class="text_description">
+    Inscreve-te para receber um convite exclusivo para o nosso grupo de<br />
+    WhatsApp, onde criarás uma rede de contactos com outros médicos e terás<br />
+    acesso a conteúdos exclusivos todos os dias.
+  </h4>
+</div>
+
+<div class="the_gold_print_section">
+  <div class="text_title">
+    <h2>A quem se destina <br class="hide show_mobile">'<span class="text_atention">The Gold Print</span>'?</h2>
+  </div>
+  <div class="section_2_list_description">
+    <ul>
+      <li>
+        Médicos de medicina estética que desejam equilibrar
+        a vida profissional, o seu negócio e a vida pessoal.
+      </li>
+      <li>
+        Empreendedores que estão dispostos a sair da zona de conforto e a arriscar.
+      </li>
+      <li>
+        Quem está estagnado e quer avançar na sua carreira e crescer profissionalmente.
+      </li>
+    </ul>
+  </div>
+  <div class="the_gold_print_section_stamp_button">
+    <!--<div class="stamp_gold_print">
+      <img src="/static/img/logo_landingpage.png" alt="Logo Img Page" />
+    </div>-->
+    <div class="button_gold_print_redirect">
+      <a
+        href="https://api.whatsapp.com/send?phone=351913471971"
+        target="_blank"
+        class="btn btn-success more_info_gold_print_btn more_info_gold_print"
+        >Quero inscrever-me!</a
+      >
+    </div>
+  </div>
+
+  <div class="the_gold_print_section_carts">
+    <h1 class="text_title">Em que consiste a mentoria Gold Print</h1>
+    <h4 class="text_description">
+      Durante 6 meses, vou-te ajudar a gerir a tua clínica de medicina estética,
+      fidelizar os clientes e criar um posicionamento forte para o teu negócio
+      com várias estratégias.
+    </h4>
+    <div class="cart_row">
+      <div
+        class="card border-success mb-3 custom_cart"
+        style="max-width: 20rem"
+      >
+        <div class="card-body d-flex flex-column justify-content-center">
+          <h4 class="card-title">10 Módulos</h4>
+          <p class="card-text">
+            Acesso a aulas pré-gravadas; cada módulo aborda um tema que te vai ajudar a elevar-te como profissional e empreendedor.
+          </p>
+        </div>
+      </div>
+      <div
+        class="card border-success mb-3 custom_cart"
+        style="max-width: 20rem"
+      >
+        <div class="card-body d-flex flex-column justify-content-center">
+          <h4 class="card-title">12 Encontros</h4>
+          <p class="card-text">
+            Reuniões com a Dra. Wilsa, onde vais receber orientação técnica e conselhos personalizados para o teu negócio.
+          </p>
+        </div>
+      </div>
+      <div
+        class="card border-success mb-3 custom_cart"
+        style="max-width: 20rem"
+      >
+        <div class="card-body d-flex flex-column justify-content-center">
+          <h4 class="card-title">Encontro mensal</h4>
+          <p class="card-text">
+            Reunião mensal com os outros mentores para criar uma rede exclusiva de contactos e partilhar conhecimentos.
+          </p>
+        </div>
+      </div>
+    </div>
+    <div class="cart_row">
+      <div
+        class="card border-success mb-3 custom_cart"
+        style="max-width: 20rem"
+      >
+        <div class="card-body d-flex flex-column justify-content-center">
+          <h4 class="card-title">Grupo exclusico</h4>
+          <p class="card-text">
+            Acesso a um grupo com todos os mentorados da Dra. Wilsa no Telegram, onde receberás apoio e informações relevantes.
+          </p>
+        </div>
+      </div>
+      <div
+        class="card border-success mb-3 custom_cart"
+        style="max-width: 20rem"
+      >
+        <div class="card-body d-flex flex-column justify-content-center">
+          <h4 class="card-title">4 modulos extra</h4>
+          <ul>
+            <li class="oficina_list">Oficina de Instagram</li>
+            <li class="oficina_list">Oficina de canva</li>
+            <li class="oficina_list">Oficina de paginas</li>
+            <li class="oficina_list">Oficina de ManyChat</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="button_gold_print_redirect">
+      <a
+        style="margin-top: 50px;"
+        href="{{ url_for('gold_print_form') }}"
+        target="_blank"
+        class="btn btn-success more_info_gold_print"
+        >Quero me inscrever!</a
+      >
+    </div>
+  </div>
+</div>
+
+<div class="the_gold_print_section">
+  <div class="row">
+    <div class="content_text">
+      <h2>Muito prazer, sou a Dra Wilsa Santiago</h2>
+      <p>
+        Sou médica especialista em anti-aging, dona de 3 empresas na área de medicina estética, mãe, mentora e esposa. Vou falar sobre como tudo começou, explorar as dificuldades que a Dra. Wilsa enfrentou para abrir a sua clínica, como era no início e o que teve de fazer para mudar e chegar até aqui.<br />
+        Hoje em dia, sou dona de várias empresas:<br /><br /><span style="font-weight: bold;">SSANTICLINIC, SANTISKIN e ACADEMIA DE SUCESSO.</span>
+      </p>
+    </div>
+    <div class="the_gold_print_section_img">
+      <img
+        class="the_gold_print_img"
+        alt="Dr.Wilsa Academia Saude de Sucesso"
+        src="/static/img/_DSC9059.jpg"
+      />
+    </div>
+  </div>
+</div>
+
+{% endblock %}

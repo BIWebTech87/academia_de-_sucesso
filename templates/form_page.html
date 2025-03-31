@@ -1,0 +1,22 @@
+{% extends 'base.html' %} {% block title %} Forma de inscrieção de Academia
+Saúde de Sucesso {% endblock %} {% block content %}
+<h1>Formulario de inscrição</h1>
+<div class="form_section">
+  <div class="header_form">
+    <h5>
+      <i class="bi bi-camera-video-fill"> {{form.zoom_string}} </i><br />
+      <i class="bi bi-calendar3"> {{form.schadule_date}} </i><br />
+      <i class="bi bi-clock-fill"> {{form.schadule_time}} </i>
+    </h5>
+  </div>
+  <form
+    id="subscribe_form"
+    name="subscribe_form"
+    action="https://script.google.com/macros/s/AKfycbw2OSUShWYC7SQk7NzMREnNA_-johFdwrUSSAghKBr6yNBqk4Czh0aUy3KkQUL5Lur9Wg/exec"
+    method="post"
+  >
+    {{ form.hidden_tag() }} {{ form.full_name() }} {{ form.countries() }} {{
+    form.wtsapp() }} {{ form.submit() }}
+  </form>
+</div>
+{% endblock%}
